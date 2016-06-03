@@ -58,4 +58,4 @@ var StoreStateMixin= function( stores ){
 
 };
 
-export default StoreStateMixin;
+module.exports= StoreStateMixin;
