@@ -46,3 +46,12 @@ var MyTopLevelComponent= React.createClass({
 	}
 });
 ```
+
+--
+<h3>Change log:</h3>
+--
+
+0.1.2:
+
+- adds hasOwnProperty to object map
+- adds es3 compatibility

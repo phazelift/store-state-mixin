@@ -22,9 +22,12 @@
 
 
 // a basic object map
-var map= ( obj, callback ) => {
+var map= function( obj, callback ){
 	var result= {};
-	Object.keys( obj ).forEach( (key) => result[key]= callback(obj[ key ], key) );
+	for ( var key in obj ){
+		if ( obj.hasOwnProperty(key) )
+			result[ key ]= callback( obj[key], key );
+	}
  	return result;
 };
 
@@ -44,15 +47,21 @@ var StoreStateMixin= function( stores ){
 		}
 
 		,getInitialState: function(){
-			return map( stores, (store) => store.getState() );
+			return map( stores, function(store){
+				return store.getState();
+			});
 		}
 
 		,componentDidMount: function(){
-			map( stores, (store, name) => store.listen(this.storeStateMixin_onChange.bind( this, name )) );
+			map( stores, function(store, name){
+				store.listen( this.storeStateMixin_onChange.bind(null, name) )
+			}.bind(this) );
 		}
 
 		,componentWillUnmount: function(){
-			map( stores, (store, name) => store.unlisten(this.storeStateMixin_onChange.bind( this, name )) );
+			map( stores, function(store, name){
+				store.unlisten( this.storeStateMixin_onChange.bind(null, name) )
+			}.bind(this) );
 		}
 	};
 

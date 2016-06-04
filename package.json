@@ -1,6 +1,6 @@
 {
   "name": "store-state-mixin",
-  "version": "0.0.2",
+  "version": "0.1.2",
   "description": "A React mixin for easily adding (flux) stores state to a component.",
   "main": "StoreStateMixin.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/phazelift/StoreStateMixin.js"
+    "url": "https://github.com/phazelift/store-state-mixin"
   },
   "keywords": [
     "store",
@@ -21,7 +21,7 @@
   "author": "Dennis Raymondo van der Sluis <phazelift@gmail.com> (https://github.com/phazelift/)",
   "license": "GPL-3",
   "bugs": {
-    "url": "https://github.com/phazelift/StoreStateMixin.js/issues"
+    "url": "https://github.com/phazelift/store-state-mixin/issues"
   },
-  "homepage": "https://github.com/phazelift/StoreStateMixin.js"
+  "homepage": "https://github.com/phazelift/store-state-mixin"
 }
