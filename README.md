@@ -157,6 +157,12 @@ export default alt.createStore( OtherStore, 'otherStore' );
 
 <br/>
 
+0.1.4:
+
+- replaces map with map-x
+
+--
+
 0.1.3:
 
 - added minified version

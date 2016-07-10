@@ -21,15 +21,7 @@
 //
 
 
-// a basic object map
-var map= function( obj, callback ){
-	var result= {};
-	for ( var key in obj ){
-		if ( obj.hasOwnProperty(key) )
-			result[ key ]= callback( obj[key], key );
-	}
- 	return result;
-};
+var map= require( 'map-x' );
 
 
 var StoreStateMixin= function( stores ){
