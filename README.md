@@ -157,6 +157,12 @@ export default alt.createStore( OtherStore, 'otherStore' );
 
 <br/>
 
+0.1.5:
+
+- changes license to MIT
+
+--
+
 0.1.4:
 
 - replaces map with map-x
@@ -175,3 +181,9 @@ export default alt.createStore( OtherStore, 'otherStore' );
 
 - adds hasOwnProperty to object map
 - adds es3 compatibility
+
+---
+
+###license
+
+MIT
