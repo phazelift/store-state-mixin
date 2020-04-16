@@ -1,6 +1,6 @@
 {
   "name": "store-state-mixin",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "A React mixin for easily adding (flux) stores state to a component.",
   "main": "StoreStateMixin.min.js",
   "dependencies" : {

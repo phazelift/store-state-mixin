@@ -1,6 +1,12 @@
 <h3>store-state-mixin</h3>
 
+<br/>
 
+#THIS REPO IS ABANDONED
+
+**With so many better and amazing tools available to pass down state in React today, this is rather pointless to use.**
+
+<br/>
 
 A React mixin for easily adding (flux) stores state to a component.
 
